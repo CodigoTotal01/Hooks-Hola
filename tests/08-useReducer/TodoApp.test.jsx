@@ -1,4 +1,4 @@
-import {useTodo} from "../../src/hooks/useTodo.js";
+import {useTodo} from "../../src/hooks/useTodos/useTodo.js";
 import {render, screen} from "@testing-library/react";
 import {TodoApp} from "../../src/08-useReducer/TodoApp.jsx";
 

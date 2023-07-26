@@ -1,7 +1,7 @@
 import {fireEvent, render, screen} from "@testing-library/react";
 import {MultipleCustomHooks} from "../../src/03-examples/MultipleCustomHooks.jsx";
-import {useFetch} from "../../src/hooks/useFetch.js";
-import {useCounter} from "../../src/hooks/useCounter.js";
+import {useFetch} from "../../src/hooks/useFetch/useFetch.js";
+import {useCounter} from "../../src/hooks/useCounter/useCounter.js";
 //Sirve para simular lo que retorna un Hook
 jest.mock("../../src/hooks/useFetch.js");
 jest.mock("../../src/hooks/useCounter.js")
