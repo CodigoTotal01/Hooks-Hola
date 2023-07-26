@@ -10,16 +10,17 @@ export const useCounter = (inicialValue = 10) => {
 
     //Exponer metodos hooks, recivimos el evento directamente
     const increment = (value = 1) => {
-        setcounter(counter + value);
+        setcounter((current) => current + value);
     }
 
     const decrement = (value = 1) => {
         if (counter === 0) return;
-        setcounter(counter - value);
+        ///El set value siemrpre tiene el tultimo valor en este caso del estado
+        setcounter((current) => current - value);
     }
 
     const reset = () => {
-        setcounter(0);
+        setcounter((current) => inicialValue);
     }
     return {
         counter,

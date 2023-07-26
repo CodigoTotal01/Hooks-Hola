@@ -23,7 +23,6 @@ export const useForm = (initialForm = {}) => {
     return {
         //crea nuestras propiedades
         ...formState,
-        setFormState,
         formState,
         onInputChange,
         onResetForm
